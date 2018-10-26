@@ -7,23 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BBAE463D7A9A2A30218173 /* Pods_epass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6BE13E484C66D7FD983110 /* Pods_epass.framework */; };
+		6B2DD6CD217CD17A003E27FA /* TakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2DD6CC217CD17A003E27FA /* TakePhoto.swift */; };
+		6B2DD6D0217CF38F003E27FA /* TakePhotoDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2DD6CF217CF38F003E27FA /* TakePhotoDocument.swift */; };
 		6B6A0B19217691C100BE3CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B18217691C100BE3CF5 /* AppDelegate.swift */; };
-		6B6A0B1B217691C100BE3CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B1A217691C100BE3CF5 /* ViewController.swift */; };
-		6B6A0B1E217691C100BE3CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0B1C217691C100BE3CF5 /* Main.storyboard */; };
 		6B6A0B21217691C100BE3CF5 /* epass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B1F217691C100BE3CF5 /* epass.xcdatamodeld */; };
 		6B6A0B23217691C400BE3CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0B22217691C400BE3CF5 /* Assets.xcassets */; };
 		6B6A0B26217691C400BE3CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0B24217691C400BE3CF5 /* LaunchScreen.storyboard */; };
+		6B6A0B4A2177054400BE3CF5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B332177054400BE3CF5 /* DataManager.swift */; };
+		6B6A0B4B2177054400BE3CF5 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B342177054400BE3CF5 /* MulticastDelegate.swift */; };
+		6B6A0B4C2177054400BE3CF5 /* SecondVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B352177054400BE3CF5 /* SecondVCDelegate.swift */; };
+		6B6A0B4D2177054400BE3CF5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B362177054400BE3CF5 /* Device.swift */; };
+		6B6A0B4E2177054400BE3CF5 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B392177054400BE3CF5 /* BEMAnimationManager.m */; };
+		6B6A0B4F2177054400BE3CF5 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B3A2177054400BE3CF5 /* BEMPathManager.m */; };
+		6B6A0B502177054400BE3CF5 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B3B2177054400BE3CF5 /* BEMCheckBoxGroup.m */; };
+		6B6A0B512177054400BE3CF5 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B3D2177054400BE3CF5 /* BEMCheckBox.m */; };
+		6B6A0B522177054400BE3CF5 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B422177054400BE3CF5 /* ColorHelper.swift */; };
+		6B6A0B532177054400BE3CF5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B442177054400BE3CF5 /* UIView.swift */; };
+		6B6A0B542177054400BE3CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B452177054400BE3CF5 /* ViewController.swift */; };
+		6B6A0B552177054400BE3CF5 /* UIView+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B462177054400BE3CF5 /* UIView+LoadingView.swift */; };
+		6B6A0B562177054400BE3CF5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B472177054400BE3CF5 /* String.swift */; };
+		6B6A0B572177054400BE3CF5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B482177054400BE3CF5 /* UIImage.swift */; };
+		6B6A0B582177054400BE3CF5 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B492177054400BE3CF5 /* TimeInterval.swift */; };
+		6B6A0B5B217705A800BE3CF5 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B5A217705A800BE3CF5 /* PersistenceService.swift */; };
+		6B6A0B5E2177091500BE3CF5 /* ListOfPasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B5D2177091500BE3CF5 /* ListOfPasses.swift */; };
+		6B6A0B612177092400BE3CF5 /* Passes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0B602177092400BE3CF5 /* Passes.storyboard */; };
+		6B6A0B802177448000BE3CF5 /* NotificationCenterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B622177448000BE3CF5 /* NotificationCenterNames.swift */; };
+		6B6A0B812177448000BE3CF5 /* NetworkingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B652177448000BE3CF5 /* NetworkingEnvironment.swift */; };
+		6B6A0B822177448000BE3CF5 /* ProgressHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B662177448000BE3CF5 /* ProgressHandler.swift */; };
+		6B6A0B832177448000BE3CF5 /* ProgressDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B672177448000BE3CF5 /* ProgressDelegate.swift */; };
+		6B6A0B842177448000BE3CF5 /* NetworkingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B682177448000BE3CF5 /* NetworkingOperation.swift */; };
+		6B6A0B852177448000BE3CF5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B692177448000BE3CF5 /* Request.swift */; };
+		6B6A0B862177448000BE3CF5 /* NetworkingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B6A2177448000BE3CF5 /* NetworkingDispatcher.swift */; };
+		6B6A0B872177448000BE3CF5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B6B2177448000BE3CF5 /* APIService.swift */; };
+		6B6A0B882177448000BE3CF5 /* ConcreateNetworkingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B6C2177448000BE3CF5 /* ConcreateNetworkingDispatcher.swift */; };
+		6B6A0B892177448000BE3CF5 /* GetPassesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B6E2177448000BE3CF5 /* GetPassesOperation.swift */; };
+		6B6A0B8A2177448000BE3CF5 /* GetOrganizationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B6F2177448000BE3CF5 /* GetOrganizationsOperation.swift */; };
+		6B6A0B8B2177448000BE3CF5 /* RequestPassOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B702177448000BE3CF5 /* RequestPassOperation.swift */; };
+		6B6A0B8E2177448000BE3CF5 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B742177448000BE3CF5 /* Requests.swift */; };
+		6B6A0B8F2177448000BE3CF5 /* DataCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B762177448000BE3CF5 /* DataCheck.swift */; };
+		6B6A0B902177448000BE3CF5 /* PassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B782177448000BE3CF5 /* PassService.swift */; };
+		6B6A0B912177448000BE3CF5 /* OrganizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B792177448000BE3CF5 /* OrganizationService.swift */; };
+		6B6A0B932177448000BE3CF5 /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B7C2177448000BE3CF5 /* Pass.swift */; };
+		6B6A0B942177448000BE3CF5 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B7D2177448000BE3CF5 /* Organization.swift */; };
+		6B6A0B952177448000BE3CF5 /* PassRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B7E2177448000BE3CF5 /* PassRequest.swift */; };
+		6B6A0B9C2177ED6500BE3CF5 /* PassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A0B9A2177ED6500BE3CF5 /* PassCell.swift */; };
+		6B6A0B9D2177ED6500BE3CF5 /* PassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0B9B2177ED6500BE3CF5 /* PassCell.xib */; };
+		6B6ACCFD217FB8AC00F788E3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ACCFC217FB8AC00F788E3 /* LoadingView.swift */; };
+		6B98BCAA217B25DD00D6CB75 /* SelectOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98BCA9217B25DD00D6CB75 /* SelectOrganization.swift */; };
+		6B98BCAE217B271000D6CB75 /* OrganizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98BCAC217B271000D6CB75 /* OrganizationCell.swift */; };
+		6B98BCAF217B271000D6CB75 /* OrganizationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B98BCAD217B271000D6CB75 /* OrganizationCell.xib */; };
+		6B98BCB1217B336C00D6CB75 /* PassRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98BCB0217B336C00D6CB75 /* PassRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6BE13E484C66D7FD983110 /* Pods_epass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_epass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2DD6CC217CD17A003E27FA /* TakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhoto.swift; sourceTree = "<group>"; };
+		6B2DD6CF217CF38F003E27FA /* TakePhotoDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoDocument.swift; sourceTree = "<group>"; };
 		6B6A0B15217691C100BE3CF5 /* epass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6A0B18217691C100BE3CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B6A0B1A217691C100BE3CF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6B6A0B1D217691C100BE3CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B6A0B20217691C100BE3CF5 /* epass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = epass.xcdatamodel; sourceTree = "<group>"; };
 		6B6A0B22217691C400BE3CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6A0B25217691C400BE3CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B6A0B27217691C400BE3CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6A0B332177054400BE3CF5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6B6A0B342177054400BE3CF5 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		6B6A0B352177054400BE3CF5 /* SecondVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCDelegate.swift; sourceTree = "<group>"; };
+		6B6A0B362177054400BE3CF5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6B6A0B382177054400BE3CF5 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		6B6A0B392177054400BE3CF5 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		6B6A0B3A2177054400BE3CF5 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		6B6A0B3B2177054400BE3CF5 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		6B6A0B3C2177054400BE3CF5 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		6B6A0B3D2177054400BE3CF5 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		6B6A0B3E2177054400BE3CF5 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		6B6A0B3F2177054400BE3CF5 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		6B6A0B422177054400BE3CF5 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		6B6A0B442177054400BE3CF5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6B6A0B452177054400BE3CF5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B6A0B462177054400BE3CF5 /* UIView+LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadingView.swift"; sourceTree = "<group>"; };
+		6B6A0B472177054400BE3CF5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6B6A0B482177054400BE3CF5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		6B6A0B492177054400BE3CF5 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		6B6A0B5A217705A800BE3CF5 /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		6B6A0B5D2177091500BE3CF5 /* ListOfPasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPasses.swift; sourceTree = "<group>"; };
+		6B6A0B602177092400BE3CF5 /* Passes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passes.storyboard; sourceTree = "<group>"; };
+		6B6A0B622177448000BE3CF5 /* NotificationCenterNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterNames.swift; sourceTree = "<group>"; };
+		6B6A0B652177448000BE3CF5 /* NetworkingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingEnvironment.swift; sourceTree = "<group>"; };
+		6B6A0B662177448000BE3CF5 /* ProgressHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHandler.swift; sourceTree = "<group>"; };
+		6B6A0B672177448000BE3CF5 /* ProgressDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDelegate.swift; sourceTree = "<group>"; };
+		6B6A0B682177448000BE3CF5 /* NetworkingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingOperation.swift; sourceTree = "<group>"; };
+		6B6A0B692177448000BE3CF5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6B6A0B6A2177448000BE3CF5 /* NetworkingDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingDispatcher.swift; sourceTree = "<group>"; };
+		6B6A0B6B2177448000BE3CF5 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6B6A0B6C2177448000BE3CF5 /* ConcreateNetworkingDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreateNetworkingDispatcher.swift; sourceTree = "<group>"; };
+		6B6A0B6E2177448000BE3CF5 /* GetPassesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPassesOperation.swift; sourceTree = "<group>"; };
+		6B6A0B6F2177448000BE3CF5 /* GetOrganizationsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrganizationsOperation.swift; sourceTree = "<group>"; };
+		6B6A0B702177448000BE3CF5 /* RequestPassOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPassOperation.swift; sourceTree = "<group>"; };
+		6B6A0B742177448000BE3CF5 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		6B6A0B762177448000BE3CF5 /* DataCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCheck.swift; sourceTree = "<group>"; };
+		6B6A0B782177448000BE3CF5 /* PassService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassService.swift; sourceTree = "<group>"; };
+		6B6A0B792177448000BE3CF5 /* OrganizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationService.swift; sourceTree = "<group>"; };
+		6B6A0B7C2177448000BE3CF5 /* Pass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
+		6B6A0B7D2177448000BE3CF5 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		6B6A0B7E2177448000BE3CF5 /* PassRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassRequest.swift; sourceTree = "<group>"; };
+		6B6A0B9A2177ED6500BE3CF5 /* PassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCell.swift; sourceTree = "<group>"; };
+		6B6A0B9B2177ED6500BE3CF5 /* PassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassCell.xib; sourceTree = "<group>"; };
+		6B6ACCFC217FB8AC00F788E3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6B98BCA9217B25DD00D6CB75 /* SelectOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOrganization.swift; sourceTree = "<group>"; };
+		6B98BCAC217B271000D6CB75 /* OrganizationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationCell.swift; sourceTree = "<group>"; };
+		6B98BCAD217B271000D6CB75 /* OrganizationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrganizationCell.xib; sourceTree = "<group>"; };
+		6B98BCB0217B336C00D6CB75 /* PassRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRequestViewController.swift; sourceTree = "<group>"; };
+		DC1FBC04DB5AE0318FDCDD4B /* Pods-epass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-epass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-epass/Pods-epass.debug.xcconfig"; sourceTree = "<group>"; };
+		E2E1596892301D68F19B2229 /* Pods-epass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-epass.release.xcconfig"; path = "Pods/Target Support Files/Pods-epass/Pods-epass.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +127,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BBAE463D7A9A2A30218173 /* Pods_epass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2658480E82DFA34D92AF9B7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F6BE13E484C66D7FD983110 /* Pods_epass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B2DD6CB217CCF2A003E27FA /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				6B2DD6CC217CD17A003E27FA /* TakePhoto.swift */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		6B2DD6CE217CF367003E27FA /* TakePhotoDocument */ = {
+			isa = PBXGroup;
+			children = (
+				6B2DD6CF217CF38F003E27FA /* TakePhotoDocument.swift */,
+			);
+			path = TakePhotoDocument;
+			sourceTree = "<group>";
+		};
+		6B393C592183D3F3008DD4F8 /* UIView+LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6B6ACCFB217FB61600F788E3 /* LoadingView */,
+				6B6A0B462177054400BE3CF5 /* UIView+LoadingView.swift */,
+			);
+			path = "UIView+LoadingView";
+			sourceTree = "<group>";
+		};
 		6B6A0B0C217691C100BE3CF5 = {
 			isa = PBXGroup;
 			children = (
 				6B6A0B17217691C100BE3CF5 /* epass */,
 				6B6A0B16217691C100BE3CF5 /* Products */,
+				8E67F3889DC8888C9D3B37C0 /* Pods */,
+				2658480E82DFA34D92AF9B7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +188,271 @@
 		6B6A0B17217691C100BE3CF5 /* epass */ = {
 			isa = PBXGroup;
 			children = (
-				6B6A0B18217691C100BE3CF5 /* AppDelegate.swift */,
-				6B6A0B1A217691C100BE3CF5 /* ViewController.swift */,
-				6B6A0B1C217691C100BE3CF5 /* Main.storyboard */,
-				6B6A0B22217691C400BE3CF5 /* Assets.xcassets */,
-				6B6A0B24217691C400BE3CF5 /* LaunchScreen.storyboard */,
-				6B6A0B27217691C400BE3CF5 /* Info.plist */,
-				6B6A0B1F217691C100BE3CF5 /* epass.xcdatamodeld */,
+				6B6A0B2D2177045F00BE3CF5 /* MainFiles */,
+				6B6A0B402177054400BE3CF5 /* Common */,
+				6B6A0B2E2177048E00BE3CF5 /* Business Logic */,
+				6B6A0B312177054400BE3CF5 /* Custom Classes */,
+				6B6A0B592177058E00BE3CF5 /* ViewControllers */,
+				6B6A0B2F2177049F00BE3CF5 /* Resources */,
 			);
 			path = epass;
+			sourceTree = "<group>";
+		};
+		6B6A0B2D2177045F00BE3CF5 /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B18217691C100BE3CF5 /* AppDelegate.swift */,
+				6B6A0B24217691C400BE3CF5 /* LaunchScreen.storyboard */,
+				6B6A0B27217691C400BE3CF5 /* Info.plist */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		6B6A0B2E2177048E00BE3CF5 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B622177448000BE3CF5 /* NotificationCenterNames.swift */,
+				6B6A0B7B2177448000BE3CF5 /* Model */,
+				6B6A0B632177448000BE3CF5 /* Networking */,
+				6B6A0B772177448000BE3CF5 /* Services */,
+				6B6A0B752177448000BE3CF5 /* Validation */,
+				6B6A0B30217704B200BE3CF5 /* CoreData */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		6B6A0B2F2177049F00BE3CF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B22217691C400BE3CF5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B6A0B30217704B200BE3CF5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B5A217705A800BE3CF5 /* PersistenceService.swift */,
+				6B6A0B1F217691C100BE3CF5 /* epass.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6B6A0B312177054400BE3CF5 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B322177054400BE3CF5 /* Other */,
+				6B6A0B372177054400BE3CF5 /* Checkbox */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		6B6A0B322177054400BE3CF5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B332177054400BE3CF5 /* DataManager.swift */,
+				6B6A0B342177054400BE3CF5 /* MulticastDelegate.swift */,
+				6B6A0B352177054400BE3CF5 /* SecondVCDelegate.swift */,
+				6B6A0B362177054400BE3CF5 /* Device.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6B6A0B372177054400BE3CF5 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B382177054400BE3CF5 /* BEMCheckBox.h */,
+				6B6A0B392177054400BE3CF5 /* BEMAnimationManager.m */,
+				6B6A0B3A2177054400BE3CF5 /* BEMPathManager.m */,
+				6B6A0B3B2177054400BE3CF5 /* BEMCheckBoxGroup.m */,
+				6B6A0B3C2177054400BE3CF5 /* BEMAnimationManager.h */,
+				6B6A0B3D2177054400BE3CF5 /* BEMCheckBox.m */,
+				6B6A0B3E2177054400BE3CF5 /* BEMPathManager.h */,
+				6B6A0B3F2177054400BE3CF5 /* BEMCheckBoxGroup.h */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		6B6A0B402177054400BE3CF5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B412177054400BE3CF5 /* Constants */,
+				6B6A0B432177054400BE3CF5 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B6A0B412177054400BE3CF5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B422177054400BE3CF5 /* ColorHelper.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6B6A0B432177054400BE3CF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B393C592183D3F3008DD4F8 /* UIView+LoadingView */,
+				6B6A0B442177054400BE3CF5 /* UIView.swift */,
+				6B6A0B452177054400BE3CF5 /* ViewController.swift */,
+				6B6A0B472177054400BE3CF5 /* String.swift */,
+				6B6A0B482177054400BE3CF5 /* UIImage.swift */,
+				6B6A0B492177054400BE3CF5 /* TimeInterval.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B6A0B592177058E00BE3CF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B2DD6CB217CCF2A003E27FA /* TakePhoto */,
+				6B6A0B5C217708D900BE3CF5 /* Passes */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B6A0B5C217708D900BE3CF5 /* Passes */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B602177092400BE3CF5 /* Passes.storyboard */,
+				6B98BCA8217B250100D6CB75 /* ListOfPasses */,
+				6B6A0B972177EBFD00BE3CF5 /* SelectOrganization */,
+				6B6A0B982177EC0700BE3CF5 /* PassRequest */,
+				6B2DD6CE217CF367003E27FA /* TakePhotoDocument */,
+			);
+			path = Passes;
+			sourceTree = "<group>";
+		};
+		6B6A0B632177448000BE3CF5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B642177448000BE3CF5 /* Core */,
+				6B6A0B6B2177448000BE3CF5 /* APIService.swift */,
+				6B6A0B6C2177448000BE3CF5 /* ConcreateNetworkingDispatcher.swift */,
+				6B6A0B6D2177448000BE3CF5 /* Operations */,
+				6B6A0B732177448000BE3CF5 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6B6A0B642177448000BE3CF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B652177448000BE3CF5 /* NetworkingEnvironment.swift */,
+				6B6A0B662177448000BE3CF5 /* ProgressHandler.swift */,
+				6B6A0B672177448000BE3CF5 /* ProgressDelegate.swift */,
+				6B6A0B682177448000BE3CF5 /* NetworkingOperation.swift */,
+				6B6A0B692177448000BE3CF5 /* Request.swift */,
+				6B6A0B6A2177448000BE3CF5 /* NetworkingDispatcher.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6B6A0B6D2177448000BE3CF5 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B6E2177448000BE3CF5 /* GetPassesOperation.swift */,
+				6B6A0B6F2177448000BE3CF5 /* GetOrganizationsOperation.swift */,
+				6B6A0B702177448000BE3CF5 /* RequestPassOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		6B6A0B732177448000BE3CF5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B742177448000BE3CF5 /* Requests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6B6A0B752177448000BE3CF5 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B762177448000BE3CF5 /* DataCheck.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		6B6A0B772177448000BE3CF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B782177448000BE3CF5 /* PassService.swift */,
+				6B6A0B792177448000BE3CF5 /* OrganizationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B6A0B7B2177448000BE3CF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B7C2177448000BE3CF5 /* Pass.swift */,
+				6B6A0B7D2177448000BE3CF5 /* Organization.swift */,
+				6B6A0B7E2177448000BE3CF5 /* PassRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B6A0B972177EBFD00BE3CF5 /* SelectOrganization */ = {
+			isa = PBXGroup;
+			children = (
+				6B98BCAB217B26EE00D6CB75 /* Cell */,
+				6B98BCA9217B25DD00D6CB75 /* SelectOrganization.swift */,
+			);
+			path = SelectOrganization;
+			sourceTree = "<group>";
+		};
+		6B6A0B982177EC0700BE3CF5 /* PassRequest */ = {
+			isa = PBXGroup;
+			children = (
+				6B98BCB0217B336C00D6CB75 /* PassRequestViewController.swift */,
+			);
+			path = PassRequest;
+			sourceTree = "<group>";
+		};
+		6B6A0B992177ED4900BE3CF5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B9A2177ED6500BE3CF5 /* PassCell.swift */,
+				6B6A0B9B2177ED6500BE3CF5 /* PassCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B6ACCFB217FB61600F788E3 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6B6ACCFC217FB8AC00F788E3 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		6B98BCA8217B250100D6CB75 /* ListOfPasses */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A0B992177ED4900BE3CF5 /* Cell */,
+				6B6A0B5D2177091500BE3CF5 /* ListOfPasses.swift */,
+			);
+			path = ListOfPasses;
+			sourceTree = "<group>";
+		};
+		6B98BCAB217B26EE00D6CB75 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B98BCAC217B271000D6CB75 /* OrganizationCell.swift */,
+				6B98BCAD217B271000D6CB75 /* OrganizationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E67F3889DC8888C9D3B37C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC1FBC04DB5AE0318FDCDD4B /* Pods-epass.debug.xcconfig */,
+				E2E1596892301D68F19B2229 /* Pods-epass.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +462,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B6A0B2A217691C400BE3CF5 /* Build configuration list for PBXNativeTarget "epass" */;
 			buildPhases = (
+				D45CA624D75A0053779B8D18 /* [CP] Check Pods Manifest.lock */,
 				6B6A0B11217691C100BE3CF5 /* Sources */,
 				6B6A0B12217691C100BE3CF5 /* Frameworks */,
 				6B6A0B13217691C100BE3CF5 /* Resources */,
+				C5748F59D9828EB763335AD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +515,129 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6A0B9D2177ED6500BE3CF5 /* PassCell.xib in Resources */,
+				6B98BCAF217B271000D6CB75 /* OrganizationCell.xib in Resources */,
 				6B6A0B26217691C400BE3CF5 /* LaunchScreen.storyboard in Resources */,
 				6B6A0B23217691C400BE3CF5 /* Assets.xcassets in Resources */,
-				6B6A0B1E217691C100BE3CF5 /* Main.storyboard in Resources */,
+				6B6A0B612177092400BE3CF5 /* Passes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5748F59D9828EB763335AD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-epass/Pods-epass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-epass/Pods-epass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45CA624D75A0053779B8D18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-epass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B6A0B11217691C100BE3CF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6A0B1B217691C100BE3CF5 /* ViewController.swift in Sources */,
+				6B6A0B892177448000BE3CF5 /* GetPassesOperation.swift in Sources */,
+				6B6A0B5E2177091500BE3CF5 /* ListOfPasses.swift in Sources */,
 				6B6A0B21217691C100BE3CF5 /* epass.xcdatamodeld in Sources */,
+				6B6A0B4C2177054400BE3CF5 /* SecondVCDelegate.swift in Sources */,
+				6B2DD6D0217CF38F003E27FA /* TakePhotoDocument.swift in Sources */,
+				6B6A0B912177448000BE3CF5 /* OrganizationService.swift in Sources */,
+				6B6A0B812177448000BE3CF5 /* NetworkingEnvironment.swift in Sources */,
+				6B6A0B4A2177054400BE3CF5 /* DataManager.swift in Sources */,
+				6B6ACCFD217FB8AC00F788E3 /* LoadingView.swift in Sources */,
+				6B6A0B802177448000BE3CF5 /* NotificationCenterNames.swift in Sources */,
+				6B6A0B582177054400BE3CF5 /* TimeInterval.swift in Sources */,
+				6B6A0B872177448000BE3CF5 /* APIService.swift in Sources */,
+				6B6A0B8E2177448000BE3CF5 /* Requests.swift in Sources */,
+				6B6A0B4E2177054400BE3CF5 /* BEMAnimationManager.m in Sources */,
+				6B6A0B532177054400BE3CF5 /* UIView.swift in Sources */,
+				6B6A0B552177054400BE3CF5 /* UIView+LoadingView.swift in Sources */,
+				6B6A0B9C2177ED6500BE3CF5 /* PassCell.swift in Sources */,
+				6B6A0B5B217705A800BE3CF5 /* PersistenceService.swift in Sources */,
+				6B6A0B822177448000BE3CF5 /* ProgressHandler.swift in Sources */,
+				6B6A0B852177448000BE3CF5 /* Request.swift in Sources */,
+				6B98BCB1217B336C00D6CB75 /* PassRequestViewController.swift in Sources */,
+				6B6A0B4D2177054400BE3CF5 /* Device.swift in Sources */,
+				6B6A0B942177448000BE3CF5 /* Organization.swift in Sources */,
+				6B2DD6CD217CD17A003E27FA /* TakePhoto.swift in Sources */,
+				6B98BCAE217B271000D6CB75 /* OrganizationCell.swift in Sources */,
+				6B6A0B862177448000BE3CF5 /* NetworkingDispatcher.swift in Sources */,
 				6B6A0B19217691C100BE3CF5 /* AppDelegate.swift in Sources */,
+				6B6A0B882177448000BE3CF5 /* ConcreateNetworkingDispatcher.swift in Sources */,
+				6B6A0B502177054400BE3CF5 /* BEMCheckBoxGroup.m in Sources */,
+				6B6A0B572177054400BE3CF5 /* UIImage.swift in Sources */,
+				6B6A0B542177054400BE3CF5 /* ViewController.swift in Sources */,
+				6B6A0B8A2177448000BE3CF5 /* GetOrganizationsOperation.swift in Sources */,
+				6B6A0B952177448000BE3CF5 /* PassRequest.swift in Sources */,
+				6B6A0B522177054400BE3CF5 /* ColorHelper.swift in Sources */,
+				6B6A0B4B2177054400BE3CF5 /* MulticastDelegate.swift in Sources */,
+				6B6A0B562177054400BE3CF5 /* String.swift in Sources */,
+				6B6A0B8F2177448000BE3CF5 /* DataCheck.swift in Sources */,
+				6B98BCAA217B25DD00D6CB75 /* SelectOrganization.swift in Sources */,
+				6B6A0B832177448000BE3CF5 /* ProgressDelegate.swift in Sources */,
+				6B6A0B902177448000BE3CF5 /* PassService.swift in Sources */,
+				6B6A0B932177448000BE3CF5 /* Pass.swift in Sources */,
+				6B6A0B842177448000BE3CF5 /* NetworkingOperation.swift in Sources */,
+				6B6A0B4F2177054400BE3CF5 /* BEMPathManager.m in Sources */,
+				6B6A0B8B2177448000BE3CF5 /* RequestPassOperation.swift in Sources */,
+				6B6A0B512177054400BE3CF5 /* BEMCheckBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6B6A0B1C217691C100BE3CF5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B6A0B1D217691C100BE3CF5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B6A0B24217691C400BE3CF5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,11 +767,12 @@
 		};
 		6B6A0B2B217691C400BE3CF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1FBC04DB5AE0318FDCDD4B /* Pods-epass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXAGVF2MTG;
-				INFOPLIST_FILE = epass/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/epass/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +786,12 @@
 		};
 		6B6A0B2C217691C400BE3CF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E1596892301D68F19B2229 /* Pods-epass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXAGVF2MTG;
-				INFOPLIST_FILE = epass/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/epass/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
