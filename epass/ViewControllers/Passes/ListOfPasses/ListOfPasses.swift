@@ -15,6 +15,7 @@ class ListOfPasses: UIViewController {
     @IBOutlet weak var barButtonAdd: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var progressView: UIView!
     @IBOutlet weak var buttonAdd: UIButton!
     
     @IBOutlet weak var imageViewNoContent: UIImageView!
@@ -37,6 +38,10 @@ class ListOfPasses: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.addSubview(refreshControl)
+        
+        imageViewNoContent.isHidden = true
+        labelNoContent.isHidden = true
+        
         self.refreshControl.addTarget(self,
                                       action: #selector(loadPasses),
                                       for: .valueChanged)
@@ -49,8 +54,7 @@ class ListOfPasses: UIViewController {
     }
     
     @objc func loadPasses() {
-        self.view.startShowingActivityIndicator()
-        self.buttonAdd.isEnabled = false
+        self.progressView.startShowingActivityIndicator()
         imageViewNoContent.isHidden = true
         labelNoContent.isHidden = true
         
@@ -58,8 +62,7 @@ class ListOfPasses: UIViewController {
         PassService.loadPasses(deviceId: deviceId) {
             result in
 
-            self.view.stopShowingActivityIndicator()
-            self.buttonAdd.isEnabled = true
+            self.progressView.stopShowingActivityIndicator()
             self.refreshControl.endRefreshing()
 
             if result.error != nil {
