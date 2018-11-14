@@ -50,4 +50,11 @@ class APIService: NSObject {
         
         return operation.execute(in: dispatcherMain, completionHandler: completionHandler)
     }
+    
+    public func showPass(id: Int, deviceId: String, completionHandler: @escaping(UIImage?, Error?) -> Void) -> URLSessionDataTask {
+        
+        let operation = ShowPassOperation(id: String(id), deviceId: deviceId)
+        
+        return operation.execute(in: dispatcherMain, completionHandler: completionHandler)
+    }
 }

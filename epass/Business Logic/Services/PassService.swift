@@ -31,10 +31,14 @@ class PassService {
                 for passJson in passesJson {
                     let pass = Pass()
                     
-                    pass.id = passJson["id"].int
+                    pass.id = Int(passJson["id"].stringValue)
                     pass.status = PassStatus(rawValue: passJson["status_code"].intValue)
                     pass.statusText = passJson["status_text"].string
                     pass.cabinets = passJson["cabinets"].string
+                    pass.organizationName = passJson["org_name"].string
+                    pass.clientName = passJson["client_name"].string
+                    pass.clientPhotoUrl = passJson["client_photo"].string
+                    pass.childName = passJson["child_name"].string
                     
                     passes.append(pass)
                 }

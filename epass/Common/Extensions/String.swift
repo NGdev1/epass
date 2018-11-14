@@ -26,4 +26,9 @@ extension String {
         }
         return pureNumber
     }
+    
+    func getNumbers() -> String {
+        let pureNumber = self.replacingOccurrences( of: "[^0-9]", with: "", options: .regularExpression)
+        return pureNumber
+    }
 }

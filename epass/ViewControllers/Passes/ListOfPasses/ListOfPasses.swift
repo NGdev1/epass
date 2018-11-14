@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Lightbox
+import SVProgressHUD
+import SDWebImage
 
 class ListOfPasses: UIViewController {
     
@@ -54,34 +57,39 @@ class ListOfPasses: UIViewController {
     }
     
     @objc func loadPasses() {
-        self.progressView.startShowingActivityIndicator()
+        if self.passes.count == 0 {
+            self.progressView.startShowingActivityIndicator()
+        }
         imageViewNoContent.isHidden = true
         labelNoContent.isHidden = true
         
         let deviceId = Device.getDeviceId()
         PassService.loadPasses(deviceId: deviceId) {
             result in
-
+            
             self.progressView.stopShowingActivityIndicator()
             self.refreshControl.endRefreshing()
-
+            
             if result.error != nil {
-                self.showError(result.error!.localizedDescription)
                 self.labelNoContent.text = "Произошла ошибка сети. Проверьте подключение и повторите попытку."
                 self.labelNoContent.isHidden = false
                 self.imageViewNoContent.isHidden = false
+                self.passes.removeAll()
+                self.tableView.reloadData()
                 return
             }
-
+            
             guard result.passes != nil else {
                 self.labelNoContent.text = "Произошла ошибка."
                 self.imageViewNoContent.isHidden = false
                 self.labelNoContent.isHidden = false
+                self.passes.removeAll()
+                self.tableView.reloadData()
                 return
             }
-
+            
             self.passes = result.passes ?? [Pass]()
-
+            
             self.reloadTableView()
         }
     }
@@ -107,21 +115,74 @@ class ListOfPasses: UIViewController {
 extension ListOfPasses: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return self.passes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PassCell", for: indexPath) as! PassCell
         
-        cell.labelStatus.text = passes[indexPath.row].status?.title
-        cell.labelStatusText.text = passes[indexPath.row].statusText
-        cell.labelCabinets.text = passes[indexPath.row].cabinets
+        cell.labelOrganization.text = passes[indexPath.section].organizationName
+        cell.labelStatus.text = passes[indexPath.section].status?.title ?? ""
+        cell.labelStatusText.text = passes[indexPath.section].statusText
+        cell.labelCabinets.text = passes[indexPath.section].cabinets
+        cell.labelClientName.text = passes[indexPath.section].clientName
+        cell.labelChildName.text = passes[indexPath.section].childName
+        
+        if let stringUrl = passes[indexPath.section].clientPhotoUrl {
+            let url = URL(string: "http://178.206.224.220:98" + stringUrl)
+            cell.imageViewPhoto.sd_setImage(with: url)
+        }
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 122
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let id = passes[indexPath.section].id else {
+            return
+        }
+        
+        SVProgressHUD.show()
+        
+        let _ = APIService.shared().showPass(id: id, deviceId: Device.getDeviceId()) {
+            image, error in
+            
+            SVProgressHUD.dismiss()
+            
+            if error != nil {
+                SVProgressHUD.show(withStatus: "Ошибка сети.")
+                return
+            }
+            
+            guard image != nil else {
+                SVProgressHUD.show(withStatus: "Ошибка сети.")
+                return
+            }
+            
+            let images = [
+                LightboxImage(image: image!)
+            ]
+            
+            // Create an instance of LightboxController.
+            let controller = LightboxController(images: images)
+            
+            // Use dynamic background.
+            controller.dynamicBackground = true
+            controller.footerView.isHidden = true
+            
+            // Present your controller.
+            self.present(controller, animated: true, completion: nil)
+            
+        }
     }
     
 }

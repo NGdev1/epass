@@ -33,4 +33,8 @@ class Pass {
     var status: PassStatus?
     var statusText: String?
     var cabinets: String?
+    var organizationName: String?
+    var clientName: String?
+    var clientPhotoUrl: String?
+    var childName: String?
 }

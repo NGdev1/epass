@@ -21,6 +21,11 @@ public enum Requests: Request {
     
     case getOrganizations
     
+    case showPass(
+        id: String,
+        deviceId: String
+    )
+    
     public var path: String {
         switch self {
         case .getPasses:
@@ -29,12 +34,14 @@ public enum Requests: Request {
             return "get_organizations"
         case .requestPass:
             return "send_pass_request"
+        case .showPass:
+            return "show_pass"
         }
     }
     
     public var method: HTTPMethod {
         switch self {
-        case .getPasses, .getOrganizations:
+        case .getPasses, .getOrganizations, .showPass:
             return .get
         case .requestPass:
             return .post
@@ -58,14 +65,16 @@ public enum Requests: Request {
                           let teacherPhone,
                           let organizationId):
             return .body(["device_id": deviceId,
-                          "user_phone": "+7" + userPhone,
+                          "user_phone": "8" + userPhone,
                           "user_fio": userFio,
                           "user_photo": userPhoto,
                           "child_fio": childFio,
                           "child_born": childBorn,
-                          "teach_phone": "+7" + teacherPhone,
+                          "teach_phone": "8" + teacherPhone,
                           "org_id": organizationId
                 ])
+        case .showPass(let id, let deviceId):
+            return .url(["id": id, "device_id": deviceId])
         }
     }
     

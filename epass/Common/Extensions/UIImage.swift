@@ -35,7 +35,7 @@ extension UIImage {
     }
     
     func base64String() -> String {
-        let data = self.pngData()
+        let data = self.jpegData(compressionQuality: 0.8)
         let base64String = data!.base64EncodedString()
         return base64String
     }

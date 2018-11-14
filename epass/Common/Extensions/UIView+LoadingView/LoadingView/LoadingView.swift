@@ -23,7 +23,6 @@ class LoadingView: UIView {
         
         color = UIColor.white
         radius = frame.size.height
-        print(radius)
     }
     
     required init?(coder aDecoder: NSCoder) {

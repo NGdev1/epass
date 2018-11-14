@@ -84,7 +84,9 @@ class SelectOrganization: UIViewController {
     }
     
     @objc func loadOrganizations() {
-        self.view.startShowingActivityIndicator()
+        if self.organizations?.count ?? 0 == 0 {
+            self.view.startShowingActivityIndicator()
+        }
         self.labelNoContent.isHidden = true
         
         OrganizationsService.loadOrganizations() {
@@ -94,15 +96,18 @@ class SelectOrganization: UIViewController {
             self.refreshControl.endRefreshing()
             
             if result.error != nil {
-                self.showError(result.error!.localizedDescription)
                 self.labelNoContent.text = "Произошла ошибка сети. Проверьте подключение и повторите попытку."
                 self.labelNoContent.isHidden = false
+                self.organizations?.removeAll()
+                self.tableView.reloadData()
                 return
             }
             
             guard result.organizations != nil else {
                 self.labelNoContent.text = "Произошла ошибка."
                 self.labelNoContent.isHidden = false
+                self.organizations?.removeAll()
+                self.tableView.reloadData()
                 return
             }
             
@@ -116,10 +121,8 @@ class SelectOrganization: UIViewController {
         if self.organizations?.count == 0 {
             labelNoContent.text = "Нет организаций"
             labelNoContent.isHidden = false
-            tableView.isHidden = true
         } else {
             labelNoContent.isHidden = true
-            tableView.isHidden = false
         }
         
         self.tableView.reloadData()

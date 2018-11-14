@@ -91,7 +91,7 @@ class PassRequestViewController: UITableViewController, SecondVCDelegate {
     
     @objc func textFieldDoneButtonAction(){
         if textFieldParentPhone.isFirstResponder {
-            self.textFieldChildFio.becomeFirstResponder()
+            textFieldParentPhone.resignFirstResponder()
         } else if textFieldTeacherPhone.isFirstResponder {
             textFieldTeacherPhone.resignFirstResponder()
             send()
@@ -190,7 +190,12 @@ extension PassRequestViewController: UITextFieldDelegate {
         } else if textField == textFieldParentPhone {
             self.textFieldChildFio.becomeFirstResponder()
         } else if textField == textFieldChildFio {
-            self.textFieldTeacherPhone.becomeFirstResponder()
+            self.textFieldChildFio.resignFirstResponder()
+            if datePickerChildBirthday.isHidden {
+                
+                toggleDatepicker()
+                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 3), at: .top, animated: true)
+            }
         } else if textField == textFieldTeacherPhone {
             textFieldTeacherPhone.resignFirstResponder()
             send()
@@ -204,7 +209,7 @@ extension PassRequestViewController: UITextFieldDelegate {
             let nsString = NSString(string: textField.text!)
             let newText = nsString.replacingCharacters(in: range, with: string)
             
-            textField.text = newText.applyPatternOnNumbers(pattern: "(###) ###-####", replacmentCharacter: "#")
+            textField.text = newText.applyPatternOnNumbers(pattern: "(###)###-##-##", replacmentCharacter: "#")
             
             return false
         }

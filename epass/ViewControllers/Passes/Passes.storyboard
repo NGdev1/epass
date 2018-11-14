@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1wP-jg-KNE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1wP-jg-KNE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHp-0L-xOM">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHp-0L-xOM">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет пропусков" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upp-KB-A32">
@@ -200,7 +200,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Ww-n2-HCQ">
-                                                    <rect key="frame" x="113" y="0.0" width="248" height="42.5"/>
+                                                    <rect key="frame" x="108" y="0.0" width="253" height="42.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
@@ -213,7 +213,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0Ww-n2-HCQ" firstAttribute="leading" secondItem="U1x-a5-PTS" secondAttribute="trailing" constant="5" id="4hb-XN-f0T"/>
+                                                <constraint firstItem="0Ww-n2-HCQ" firstAttribute="leading" secondItem="U1x-a5-PTS" secondAttribute="trailing" id="4hb-XN-f0T"/>
                                                 <constraint firstItem="U1x-a5-PTS" firstAttribute="leading" secondItem="Ecr-3P-jgD" secondAttribute="leading" constant="14" id="EiU-go-nLc"/>
                                                 <constraint firstAttribute="trailing" secondItem="0Ww-n2-HCQ" secondAttribute="trailing" constant="14" id="Zc8-09-UVY"/>
                                                 <constraint firstItem="0Ww-n2-HCQ" firstAttribute="top" secondItem="Ecr-3P-jgD" secondAttribute="top" id="aWv-Cw-WGN"/>
@@ -352,7 +352,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="otw-KW-0UJ">
-                                                    <rect key="frame" x="113" y="0.0" width="193" height="42.5"/>
+                                                    <rect key="frame" x="108" y="0.0" width="253" height="42.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
@@ -367,7 +367,7 @@
                                             <constraints>
                                                 <constraint firstItem="otw-KW-0UJ" firstAttribute="top" secondItem="cJn-sy-znt" secondAttribute="top" id="6nw-Hb-Tdc"/>
                                                 <constraint firstAttribute="bottom" secondItem="otw-KW-0UJ" secondAttribute="bottom" id="Go0-Rg-qTs"/>
-                                                <constraint firstItem="otw-KW-0UJ" firstAttribute="leading" secondItem="Eaw-UV-eBS" secondAttribute="trailing" constant="5" id="NXX-50-dkc"/>
+                                                <constraint firstItem="otw-KW-0UJ" firstAttribute="leading" secondItem="Eaw-UV-eBS" secondAttribute="trailing" id="NXX-50-dkc"/>
                                                 <constraint firstItem="Eaw-UV-eBS" firstAttribute="top" secondItem="cJn-sy-znt" secondAttribute="top" constant="11" id="jC1-Nb-xYu"/>
                                                 <constraint firstAttribute="trailing" secondItem="otw-KW-0UJ" secondAttribute="trailing" constant="14" id="ka7-MU-0Fi"/>
                                                 <constraint firstItem="Eaw-UV-eBS" firstAttribute="leading" secondItem="cJn-sy-znt" secondAttribute="leading" constant="14" id="p6b-9j-shZ"/>
@@ -387,7 +387,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1E-2a-at7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <state key="normal" title="Отправить запрос"/>
                                                 </button>
@@ -412,7 +412,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXQ-6n-z3d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <state key="normal" title="Отменить">
                                                         <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
